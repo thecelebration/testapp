@@ -85,6 +85,11 @@ textarea {
     color: #fed136;
     font-family: "Kaushan Script","Helvetica Neue",Helvetica,Arial,cursive;
     font-size: 2em;
+    display: inline-flex;
+}
+.navbar .navbar-brand.logo img{
+  height: 45px;
+  margin-top: -12px;;
 }
 .navbar .navbar-nav li a{
   font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
@@ -110,6 +115,10 @@ textarea {
   text-transform: uppercase;
   font-weight: 700;
 }
+.section-heading img{
+  height: 80px;
+  margin-top: -30px;
+}
 .section-subheading{
   font-size: 16px;
   text-transform: none;
@@ -133,4 +142,107 @@ textarea {
   margin: 12px auto;
   border-radius: 4px;
   min-height: 144px;
+}
+
+@media only screen and (max-width: 767px){
+  .section-heading{
+    font-size: 26px;
+  }
+}
+
+
+/*page css*/
+.wishing-section{
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+.wishing-section .add-btn{
+  position: fixed;
+  right: 10px;
+  bottom: 70px;
+}
+.wishing-section .add-btn img{
+  max-width: 100%;
+  width: 60px;
+  cursor: pointer;
+}
+.create-div{
+  background-color: #eeeeee;
+  max-width: 600px;
+  width: 100%;
+  margin: 15px auto;
+  text-align: center;
+}
+.create-div .create-new{
+  padding: 30px 10px;
+}
+.create-div h4{
+  font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 28px;
+  margin-bottom: 30px;
+}
+.create-div input{
+  width: 90%;
+  height: 45px;
+  border: 1px solid #e0e0e0;
+  padding: 10px;
+  border-radius: 5px;
+  margin-bottom: 30px;
+}
+.create-div button{
+  padding: 10px 20px;
+  background-color: #333;
+  color: #f1f1f1;
+  font-size: 16px;
+  border: 0;
+  transition: .2s;
+  border-radius: 4px;
+}
+.create-div button:hover{
+  border: 1px solid #333;
+  background-color: #fff;
+  color: #000;
+}
+.create-div .view-more{
+  background-color: #fed136;
+  color: #fff;
+  padding: 20px;
+  font-size: 20px;
+  cursor: pointer;
+}
+#addModal .close{
+  position: absolute;
+  right: -8px;
+  top: -8px;
+  width: 30px;
+  background-color: #333;
+  opacity: 1;
+  color: #fff;
+  height: 30px;
+  border-radius: 100%;
+  font-size: 24px;
+}
+
+.page-footer{
+  padding: 0 32px;
+  height: 56px;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+}
+.page-footer .whatsapp-share{
+  width: 50%;
+  float: left;
+  text-align: center;
+  padding: 15px;
+  border-right: 1px solid #999999;
+}
+.page-footer .fb-share{
+  width: 50%;
+  float: left;
+  text-align: center;
+  padding: 15px;
+}
+.user-name{
+  text-transform: capitalize;
 }
