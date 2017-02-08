@@ -7,7 +7,7 @@
   <meta property="og:site_name" content="Wishing Baba">
   <meta property="og:title" content="valentine Day" />
   <meta property="og:description" content="Your friend has send a gift for you, Click Here" />
-  <meta property="og:image" itemprop="image" content="http://wishingbaba.com/images/teddy-sm.png">
+  <meta property="og:image" itemprop="image" content="http://wishingbaba.com/valentineDay/images/teddy-sm.png">
   <meta property="og:type" content="website" />
   <meta property="og:updated_time" content="1440432930" />
   <link rel="shortcut icon" type="image/gif" href="images/wishingBaba.gif"/>
@@ -21,6 +21,31 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  <div id="fb-root"></div>
+  <script>(function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = "//connect.facebook.net/en_US/all.js#xfbml=1";
+    fjs.parentNode.insertBefore(js, fjs);
+  }(document, 'script', 'facebook-jssdk'));</script>
+
+  <script src="https://cdn.onesignal.com/sdks/OneSignalSDK.js" async='async'>
+  </script>
+  <script>
+    var OneSignal = window.OneSignal || [];
+    OneSignal.push(["init", {
+      appId: "c42fe564-f56f-47aa-abab-a38b57081b2e",
+      autoRegister: false, /* Set to true to automatically prompt visitors */
+      subdomainName: 'wishingBaba',
+      httpPermissionRequest: {
+        enable: true
+      },
+      notifyButton: {
+          enable: false
+      }
+    }]);
+  </script>
 
   <style type="text/css">
     .main-div{
@@ -142,7 +167,7 @@
     <a href="whatsapp://send?text=http://wishingbaba.com/valentineDay/page-1.html?name=your-name" data-action="share/whatsapp/share" ><img src="../images/whatsapp.png"> Share on What's app</a>
   </div>
   <div class="fb-share-button fb-share" data-layout="button_count" data-size="small" data-mobile-iframe="true">
-    <a class="" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fthecelebration.github.io%2FvalentineDay%2Fpage-1.html%3Fname%3Dyour-name&amp;src=sdkpreparse"><img src="../images/facebook.png"> Share on Facebook</a>
+    <a class="" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fwishingbaba.com%2FvalentineDay%2Fpage-1.html%3Fname%3Dyour-name&amp;src=sdkpreparse"><img src="../images/facebook.png"> Share on Facebook</a>
   </div>
 </footer>
 
@@ -184,7 +209,7 @@ $(window).load(function() {
   setTimeout(function(){
 
     $(".whatsapp-share a").attr("href","whatsapp://send?text=http://wishingbaba.com/valentineDay/page-1.html?name="+urlName+"")
-    $(".fb-share a").attr("href","https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fwishingbaba.com%2FvalentineDay%2Fpage-1.html%3Fname%3D"+urlName+"&amp;src=sdkpreparse")
+    $(".fb-share a").attr("href","https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fwishingbaba.com%2FvalentineDay%2Fpage-1.html%3Fname%3D"+urlName+"&amp;src=sdkpreparse")
   },600)
 });
 
