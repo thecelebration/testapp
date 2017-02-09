@@ -4,7 +4,7 @@
 	<title>Wishing Baba</title>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="shortcut icon" type="image/gif" href="images/wishingBaba.gif"/>
+	<link rel="shortcut icon" type="image/gif" href="../images/wishingBaba.gif"/>
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 	<link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
 	<link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
@@ -13,23 +13,25 @@
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-
-  <script src="https://cdn.onesignal.com/sdks/OneSignalSDK.js" async='async'>
-  </script>
+  <script src="https://cdn.onesignal.com/sdks/OneSignalSDK.js" async='async'></script>
   <script>
     var OneSignal = window.OneSignal || [];
     OneSignal.push(["init", {
       appId: "c42fe564-f56f-47aa-abab-a38b57081b2e",
-      autoRegister: false, /* Set to true to automatically prompt visitors */
-      subdomainName: 'wishingBaba',
+      autoRegister: true, /* Set to true to automatically prompt visitors */
+      subdomainName: 'thecelebration',
+      /*
+      subdomainName: Use the value you entered in step 1.4: http://imgur.com/a/f6hqN
+      */
       httpPermissionRequest: {
         enable: true
       },
       notifyButton: {
-          enable: false
+          enable: false /* Set to false to hide */
       }
     }]);
   </script>
+
 </head>
 <body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="50">
 
