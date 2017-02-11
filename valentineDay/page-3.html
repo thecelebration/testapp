@@ -6,11 +6,11 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
   <meta property="og:site_name" content="Wishing Baba">
   <meta property="og:title" content="valentine Day" />
-  <meta property="og:description" content="Your friend has send a gift for you, Click Here" />
-  <meta property="og:image" itemprop="image" content="http://wishingbaba.com/valentineDay/images/teddy-sm.png">
+  <meta property="og:description" content="Your friend has sent a gift to wish you Hug Day, Click Here" />
+  <meta property="og:image" itemprop="image" content="http://wishingbaba.com/valentineDay/images/hug-1-sm.png">
   <meta property="og:type" content="website" />
   <meta property="og:updated_time" content="1440432930" />
-  <link rel="shortcut icon" type="image/gif" href="images/wishingBaba.gif"/>
+  <link rel="shortcut icon" type="image/gif" href="../images/wishingBaba.gif"/>
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 	<link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
 	<link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
@@ -48,43 +48,24 @@
 
   <style type="text/css">
     .main-div{
-      background-image: url("images/bg-1.png");
+      background-image: url("images/hug-1.gif");
       background-size: 100% 100%;
       margin-top: 15px;
-    }
-    .gift-box{
-      text-align: center;
-    }
-    .gift-box h3{
-      padding-top: 40px;
-      color: #fff;
-    }
-    .gift-box p{
-      margin-bottom: 20px;
-      color: #666;
-    }
-    .gift-box img{
-      width: 260px;
-      max-width: 100%;
-      margin: 25px auto;
-      cursor: pointer;
     }
     .new-text{
       text-align: center;
       max-width: 300px;
-      float: right;
-      display: none;
-      margin-right: 10%;
+      margin: auto;%;
     }
     .new-text h3{
       margin-top: 70px;
-      color: #fff;
+      color: #555;
     }
     .new-text h1{
-      color: #fff;
+      color: #555;
     }
     .new-text h4{
-      color: #fff;
+      color: #555;
     }
   </style>
 
@@ -128,15 +109,10 @@
     <div class="col-sm-2"></div>
     <div class="col-sm-8">
       <div class="main-div">
-        <div class="gift-box">
-          <h3><strong><span class="user-name"></span></strong> has sent you a <strong>special gift</strong></h3>
-          <img src="images/heart-box.png">
-          <p>Click here to open it</p>
-        </div>
         <div class="new-text">
           <h3><strong><span class="user-name"></span></strong></h3>
           <h4>wishing You</h4>
-          <h1>Happy Teddy Day</h1>
+          <h1>Happy Hug Day</h1>
         </div>
       </div>
 
@@ -163,10 +139,10 @@
 <!-- Footer -->
 <footer class="page-footer">
   <div class="whatsapp-share">
-    <a href="whatsapp://send?text=http://wishingbaba.com/valentineDay/page-1.html?name=your-name" data-action="share/whatsapp/share" ><img src="../images/whatsapp.png"> Share on What's app</a>
+    <a href="whatsapp://send?text=http://wishingbaba.com/valentineDay/page-3.html?name=your-name" data-action="share/whatsapp/share" ><img src="../images/whatsapp.png"> Share <span class="hidden-xs">on What's app</span></a>
   </div>
   <div class="fb-share-button fb-share" data-layout="button_count" data-size="small" data-mobile-iframe="true">
-    <a class="" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fwishingbaba.com%2FvalentineDay%2Fpage-1.html%3Fname%3Dyour-name&amp;src=sdkpreparse"><img src="../images/facebook.png"> Share on Facebook</a>
+    <a class="" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fwishingbaba.com%2FvalentineDay%2Fpage-3.html%3Fname%3Dyour-name&amp;src=sdkpreparse"><img src="../images/facebook.png"> Share <span class="hidden-xs">on Facebook</span></a>
   </div>
 </footer>
 
@@ -207,31 +183,26 @@ $(window).load(function() {
   $(".user-name").text(showName)
   setTimeout(function(){
 
-    $(".whatsapp-share a").attr("href","whatsapp://send?text=http://wishingbaba.com/valentineDay/page-1.html?name="+urlName+"")
-    $(".fb-share a").attr("href","https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fwishingbaba.com%2FvalentineDay%2Fpage-1.html%3Fname%3D"+urlName+"&amp;src=sdkpreparse")
+    $(".whatsapp-share a").attr("href","whatsapp://send?text=http://wishingbaba.com/valentineDay/page-3.html?name="+urlName+"")
+    $(".fb-share a").attr("href","https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fwishingbaba.com%2FvalentineDay%2Fpage-3.html%3Fname%3D"+urlName+"&amp;src=sdkpreparse")
   },600)
 });
 
 $(document).on("click","#nameSubmit",function(){
   var newUserName = $("#userName").val().replace(" ","-")
-  window.location.href = "page-1.html?name="+newUserName+""
+  window.location.href = "page-3.html?name="+newUserName+""
 })
 
 $(document).on("click","#nameSubmitBottom",function(){
   var newUserName = $("#userNameBottom").val().replace(" ","-")
-  window.location.href = "page-1.html?name="+newUserName+""
+  window.location.href = "page-3.html?name="+newUserName+""
 })
 
-setInterval(function(){ 
-  $( ".gift-box img" ).effect( "shake", "", 500);
-}, 3000);
-$(document).on("click",".gift-box img",function(){
-  $( ".gift-box img" ).effect( "explode", "", 500);
-  $( ".gift-box" ).fadeOut()
-  $(".main-div").css("background-image","url(images/teddy.jpg)")
-  $(".new-text").fadeIn()
-})
+
+
 </script>
+
+
 
 <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
