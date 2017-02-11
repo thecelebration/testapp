@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Wishing Baba</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta property="og:site_name" content="Wishing Baba">
+  <meta property="og:title" content="valentine Day" />
+  <meta property="og:description" content="Your friend has send a gift for you to say Happy Kiss Day, Click Here" />
+  <meta property="og:image" itemprop="image" content="http://wishingbaba.com/valentineDay/images/teddy-sm.png">
+  <meta property="og:type" content="website" />
+  <meta property="og:updated_time" content="1440432930" />
+  <link rel="shortcut icon" type="image/gif" href="../images/wishingBaba.gif"/>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+	<link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" type="text/css" href="../css/style.css">
+  <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  <div id="fb-root"></div>
+  <script>(function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = "//connect.facebook.net/en_US/all.js#xfbml=1";
+    fjs.parentNode.insertBefore(js, fjs);
+  }(document, 'script', 'facebook-jssdk'));</script>
+
+  <script src="https://cdn.onesignal.com/sdks/OneSignalSDK.js" async='async'></script>
+  <script>
+    var OneSignal = window.OneSignal || [];
+    OneSignal.push(["init", {
+      appId: "c42fe564-f56f-47aa-abab-a38b57081b2e",
+      autoRegister: true, /* Set to true to automatically prompt visitors */
+      subdomainName: 'wishingBaba',
+      httpPermissionRequest: {
+        enable: true
+      },
+      notifyButton: {
+          enable: true
+      }
+    }]);
+  </script>
+
+  <style type="text/css">
+    .main-div{
+      background-image: url("images/bg-1.png");
+      background-size: 100% 100%;
+      margin-top: 15px;
+    }
+    .gift-box{
+      text-align: center;
+    }
+    .gift-box h3{
+      padding-top: 40px;
+      color: #fff;
+    }
+    .gift-box p{
+      margin-bottom: 20px;
+      color: #666;
+    }
+    .gift-box img{
+      width: 260px;
+      max-width: 100%;
+      margin: 25px auto;
+      cursor: pointer;
+    }
+    .new-text{
+      text-align: center;
+      max-width: 300px;
+      float: right;
+      display: none;
+      margin-right: 10%;
+    }
+    .new-text h3{
+      margin-top: 70px;
+      color: #fff;
+    }
+    .new-text h1{
+      color: #fff;
+    }
+    .new-text h4{
+      color: #fff;
+    }
+  </style>
+
+
+</head>
+<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="50">
+
+<nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand logo" href="../index.html">Wishing <img src="../images/wishing-baba.png"> Baba</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="../index.html#myPage">HOME</a></li>
+        <li><a href="../index.html#band">ABOUT</a></li>
+        <li><a href="../index.html#tour">THEMES</a></li>
+        <li><a href="../index.html#contact">CONTACT</a></li>
+<!--         <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">MORE
+          <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="#">Merchandise</a></li>
+            <li><a href="#">Extras</a></li>
+            <li><a href="#">Media</a></li> 
+          </ul>
+        </li> -->
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- Container (wishing Section) -->
+<div class="container-fluid wishing-section">
+  <div class="row">
+    <div class="col-sm-2"></div>
+    <div class="col-sm-8">
+      <div class="main-div">
+        <div class="gift-box">
+          <h3><strong><span class="user-name"></span></strong> has sent you a <strong>special gift</strong></h3>
+          <img src="images/heart-box.png">
+          <p>Click here to open it</p>
+        </div>
+        <!-- <div class="new-text">
+          <h3><strong><span class="user-name"></span></strong></h3>
+          <h4>wishing You</h4>
+          <h1>Happy Teddy Day</h1>
+        </div> -->
+      </div>
+
+      <div class="create-div">
+        <div class="create-new">
+          <h4 class="text-center">Create your whish here </h4>
+          <input type="text" id="userNameBottom" placeholder="Enter your name" required="true">
+          <div class="text-center">
+            <button id="nameSubmitBottom">Submit</button>
+          </div>
+        </div>
+        <div class="view-more">
+          View More Themes
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-2"></div>
+  </div>
+  <div class="add-btn">
+    <img src="../images/add.png" data-toggle="modal" data-target="#addModal">
+  </div>
+</div>
+
+<!-- Footer -->
+<footer class="page-footer">
+  <div class="whatsapp-share">
+    <a href="whatsapp://send?text=http://wishingbaba.com/valentineDay/page-2.html?name=your-name" data-action="share/whatsapp/share" ><img src="../images/whatsapp.png"> Share on What's app</a>
+  </div>
+  <div class="fb-share-button fb-share" data-layout="button_count" data-size="small" data-mobile-iframe="true">
+    <a class="" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fwishingbaba.com%2FvalentineDay%2Fpage-2.html%3Fname%3Dyour-name&amp;src=sdkpreparse"><img src="../images/facebook.png"> Share on Facebook</a>
+  </div>
+</footer>
+
+
+<div id="addModal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-body">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <div class="create-div">
+          <div class="create-new">
+            <h4 class="text-center">Create your whish here </h4>
+            <input type="text" id="userName" placeholder="Enter your name" required="true">
+            <div class="text-center">
+              <button id="nameSubmit">Submit</button>
+            </div>
+          </div>
+          <div class="view-more">
+            View More Themes
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+
+</body>
+</html>
+<script type="text/javascript">
+  var userName
+$(window).load(function() {
+  $('.main-div').css("min-height", $(window).height()-145)
+  userName = window.location.href.split("name=")[1];
+  var urlName = userName
+  var showName = userName.replace("-"," ")
+  $(".user-name").text(showName)
+  setTimeout(function(){
+
+    $(".whatsapp-share a").attr("href","whatsapp://send?text=http://wishingbaba.com/valentineDay/page-2.html?name="+urlName+"")
+    $(".fb-share a").attr("href","https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fwishingbaba.com%2FvalentineDay%2Fpage-2.html%3Fname%3D"+urlName+"&amp;src=sdkpreparse")
+  },600)
+});
+
+$(document).on("click","#nameSubmit",function(){
+  var newUserName = $("#userName").val().replace(" ","-")
+  window.location.href = "page-2.html?name="+newUserName+""
+})
+
+$(document).on("click","#nameSubmitBottom",function(){
+  var newUserName = $("#userNameBottom").val().replace(" ","-")
+  window.location.href = "page-2.html?name="+newUserName+""
+})
+
+setInterval(function(){ 
+  $( ".gift-box img" ).effect( "shake", "", 500);
+}, 3000);
+
+$(document).on("click",".gift-box img",function(){
+  $( ".gift-box img" ).effect( "explode", "", 500);
+  $( ".gift-box" ).fadeOut()
+  $(".main-div").css("background-image","url(images/kiss.gif)")
+  $(".new-text").fadeIn()
+})
+</script>
