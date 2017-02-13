@@ -80,16 +80,16 @@
 
     .bgoverlay{
   background: rgb(103,58,183);
-  background: rgba(103,58,183,0.7);
+  background: rgba(103,58,183,0.5);
   position: absolute;
-  top:0;
+  top:-10px;
   left:0;
   right:0;
   /*bottom:0;*/
 }
 .container{
   position: relative;
-  margin: 120px auto 0 auto;
+  margin: 80px auto 0 auto;
   width: 320px;
 }
 
@@ -127,7 +127,7 @@
 .ico2:after{
   position: absolute;
   top:0;
-  left:0;
+  left:10;
 }
 .ico:before,
 .ico:after,
@@ -304,7 +304,7 @@
 <script type="text/javascript">
   var userName
 $(window).load(function() {
-  $('.bgoverlay').css("min-height", $(window).height()-105)
+  $('.bgoverlay').css("min-height", $(window).height()-120)
   $('.main-div').css("min-height", $(window).height()-145)
   userName = window.location.href.split("name=")[1];
   var urlName = userName
