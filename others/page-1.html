@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Wishing Baba</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta property="og:site_name" content="Wishing Baba">
+  <meta property="og:title" content="valentine Day" />
+  <meta property="og:description" content="Your friend has sent a gift to wish you Hug Day, Click Here" />
+  <meta property="og:image" itemprop="image" content="http://wishingbaba.com/valentineDay/images/hug-1-sm.png">
+  <meta property="og:type" content="website" />
+  <meta property="og:updated_time" content="1440432930" />
+  <link rel="shortcut icon" type="image/gif" href="../images/wishingBaba.gif"/>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+	<link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" type="text/css" href="../css/style.css">
+  <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  <div id="fb-root"></div>
+  <script>(function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = "//connect.facebook.net/en_US/all.js#xfbml=1";
+    fjs.parentNode.insertBefore(js, fjs);
+  }(document, 'script', 'facebook-jssdk'));</script>
+
+  <script src="https://cdn.onesignal.com/sdks/OneSignalSDK.js" async='async'></script>
+  <script>
+    var OneSignal = window.OneSignal || [];
+    OneSignal.push(["init", {
+      appId: "c42fe564-f56f-47aa-abab-a38b57081b2e",
+      autoRegister: true, /* Set to true to automatically prompt visitors */
+      subdomainName: 'wishingBaba',
+      httpPermissionRequest: {
+        enable: true
+      },
+      notifyButton: {
+          enable: true
+      }
+    }]);
+  </script>
+
+  <style type="text/css">
+    /* CSS reset { */
+body,div,h1,button,p{margin:0;padding:0}
+button{font-family:inherit;font-size:inherit;font-style:inherit;font-weight:inherit}
+a:active,a:focus {outline: 0}
+/* } */
+
+body, input, select, textarea {font:18px/18px "Helvetica Neue",Helvetica,Arial,sans-serif;}
+body {
+  background:#ddd url(http://subtlepatterns.com/patterns/texturetastic_gray.png);
+}
+
+h1 {
+  text-align:center;
+  margin-top: 20px;
+  font-size: 1.75em;
+  font-weight: normal;
+  color: #bbb;
+}
+
+h1, a {
+  text-shadow: 0 1px 0 rgba(255,255,255,.8);
+}
+
+#sm {
+background: rgb(238,238,238);
+background: -moz-linear-gradient(top, rgba(238,238,238,1) 0%, rgba(204,204,204,1) 100%);
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(238,238,238,1)), color-stop(100%,rgba(204,204,204,1)));
+background: -webkit-linear-gradient(top, rgba(238,238,238,1) 0%,rgba(204,204,204,1) 100%);
+background: -o-linear-gradient(top, rgba(238,238,238,1) 0%,rgba(204,204,204,1) 100%);
+background: -ms-linear-gradient(top, rgba(238,238,238,1) 0%,rgba(204,204,204,1) 100%);
+background: linear-gradient(top, rgba(238,238,238,1) 0%,rgba(204,204,204,1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#eeeeee', endColorstr='#cccccc',GradientType=0 );
+
+  width: 540px;
+  margin: 10px auto 20px;
+  padding: 20px;
+  border-radius: 50px;
+}
+
+#sm, .lever button {box-shadow: 0 3px 9px rgba(0,0,0,.25)}
+  .group, .reel, .lever {display: inline-block;}
+  .group, .lever {
+background: rgb(252,234,187);
+background: -moz-linear-gradient(top, rgba(252,234,187,1) 0%, rgba(252,205,77,1) 50%, rgba(248,181,0,1) 51%, rgba(251,223,147,1) 100%);
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(252,234,187,1)), color-stop(50%,rgba(252,205,77,1)), color-stop(51%,rgba(248,181,0,1)), color-stop(100%,rgba(251,223,147,1)));
+background: -webkit-linear-gradient(top, rgba(252,234,187,1) 0%,rgba(252,205,77,1) 50%,rgba(248,181,0,1) 51%,rgba(251,223,147,1) 100%);
+background: -o-linear-gradient(top, rgba(252,234,187,1) 0%,rgba(252,205,77,1) 50%,rgba(248,181,0,1) 51%,rgba(251,223,147,1) 100%);
+background: -ms-linear-gradient(top, rgba(252,234,187,1) 0%,rgba(252,205,77,1) 50%,rgba(248,181,0,1) 51%,rgba(251,223,147,1) 100%);
+background: linear-gradient(top, rgba(252,234,187,1) 0%,rgba(252,205,77,1) 50%,rgba(248,181,0,1) 51%,rgba(251,223,147,1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fceabb', endColorstr='#fbdf93',GradientType=0 );
+  }
+
+.group {
+  border-radius: 30px;
+  padding: 20px 0 20px 20px;
+}
+
+  .reel {
+background: #fff;
+background: -moz-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(241,241,241,1) 50%, rgba(225,225,225,1) 51%, rgba(246,246,246,1) 100%);
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(255,255,255,1)), color-stop(50%,rgba(241,241,241,1)), color-stop(51%,rgba(225,225,225,1)), color-stop(100%,rgba(246,246,246,1)));
+background: -webkit-linear-gradient(top, rgba(255,255,255,1) 0%,rgba(241,241,241,1) 50%,rgba(225,225,225,1) 51%,rgba(246,246,246,1) 100%);
+background: -o-linear-gradient(top, rgba(255,255,255,1) 0%,rgba(241,241,241,1) 50%,rgba(225,225,225,1) 51%,rgba(246,246,246,1) 100%);
+background: -ms-linear-gradient(top, rgba(255,255,255,1) 0%,rgba(241,241,241,1) 50%,rgba(225,225,225,1) 51%,rgba(246,246,246,1) 100%);
+background: linear-gradient(top, rgba(255,255,255,1) 0%,rgba(241,241,241,1) 50%,rgba(225,225,225,1) 51%,rgba(246,246,246,1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#f6f6f6',GradientType=0 );
+
+    text-align:center;
+    float: left;
+    padding:0 10px;
+    width: 80px;
+    height: 100px;
+    overflow: hidden;
+    margin-right: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 7px rgba(0,0,0,.3) inset, 0 0px 1px rgba(0,0,0,.2) inset;
+  }
+    .reel div {
+      position: relative;
+      top: -48px;
+    }
+    .reel p {
+      font-weight: bold;
+      height: 60px;
+      margin-top: 10px;
+    }
+    .reel p:nth-child(1) {color:#c60}
+    .reel p:nth-child(2) {color:#690}
+    .reel p:nth-child(3) {color:#630}
+
+.lever {
+  float: right;
+  padding-right: 20px;
+}
+  .lever button {
+    text-align:center;
+    border-radius: 10px;
+    line-height: 100px;
+    width: 100px;
+    border: none;
+    font-size:1.8em;
+    -webkit-transition: all .2s ease;
+    -moz-transition: all .2s ease;
+    -o-transition: all .2s ease;
+background: rgb(252,255,244);
+background: -moz-linear-gradient(top, rgba(252,255,244,1) 0%, rgba(233,233,206,1) 100%);
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(252,255,244,1)), color-stop(100%,rgba(233,233,206,1)));
+background: -webkit-linear-gradient(top, rgba(252,255,244,1) 0%,rgba(233,233,206,1) 100%);
+background: -o-linear-gradient(top, rgba(252,255,244,1) 0%,rgba(233,233,206,1) 100%);
+background: -ms-linear-gradient(top, rgba(252,255,244,1) 0%,rgba(233,233,206,1) 100%);
+background: linear-gradient(top, rgba(252,255,244,1) 0%,rgba(233,233,206,1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fcfff4', endColorstr='#e9e9ce',GradientType=0 );
+  }
+  .lever button:active {
+    color: #900;
+    box-shadow: 0 1px 4px rgba(0,0,0,.3);
+    margin: 2px 0 -2px;
+  }
+
+.msg {
+  text-align: center;
+  color: #bbb;
+  font-size:1.8em;
+  padding: 25px 0 5px;
+  text-shadow: 0 -1px 0 rgba(0,0,0,.3), 0 1px 0 rgba(255,255,255,.5);
+}
+
+a {
+  color: #222cff;
+  margin-top: 15px;
+  text-align: center;
+  display: block;
+  text-decoration:none;
+}
+
+a:hover {
+  color:#ff4c00
+}
+  </style>
+
+<script type="text/javascript">
+  
+  /*
+  requestAnimationFrame polyfill
+*/
+(function(w){
+  var lastTime = 0,
+    vendors = ['webkit', /*'moz',*/ 'o', 'ms'];
+  for (var i = 0; i < vendors.length && !w.requestAnimationFrame; ++i){
+    w.requestAnimationFrame = w[vendors[i] + 'RequestAnimationFrame'];
+    w.cancelAnimationFrame = w[vendors[i] + 'CancelAnimationFrame']
+      || w[vendors[i] + 'CancelRequestAnimationFrame'];
+  }
+
+  if (!w.requestAnimationFrame)
+    w.requestAnimationFrame = function(callback, element){
+      var currTime = +new Date(),
+        timeToCall = Math.max(0, 16 - (currTime - lastTime)),
+        id = w.setTimeout(function(){ callback(currTime + timeToCall) }, timeToCall);
+      lastTime = currTime + timeToCall;
+      return id;
+    };
+
+  if (!w.cancelAnimationFrame)
+    w.cancelAnimationFrame = function(id){
+    clearTimeout(id);
+  };
+})(this);
+
+/*
+  Slot Machine
+*/
+var sm = (function(undefined){
+
+  var tMax = 3000, // animation time, ms
+    height = 210,
+    speeds = [],
+    r = [],
+    reels = [
+      ['coffee maker',   'teapot',       'espresso machine'],
+      ['coffee filter',  'tea strainer', 'espresso tamper'],
+      ['coffee grounds', 'loose tea',    'ground espresso beans']
+    ],
+    $reels, $msg,
+    start;
+
+  function init(){
+    $reels = $('.reel').each(function(i, el){
+      el.innerHTML = '<div><p>' + reels[i].join('</p><p>') + '</p></div><div><p>' + reels[i].join('</p><p>') + '</p></div>'
+    });
+
+    $msg = $('.msg');
+
+    $('button').click(action);
+  }
+
+  function action(){
+    if (start !== undefined) return;
+
+    for (var i = 0; i < 3; ++i) {
+      speeds[i] = Math.random() + .5; 
+      r[i] = (Math.random() * 3 | 0) * height / 3;
+    }
+
+    $msg.html('Spinning...');
+    animate();
+  }
+
+  function animate(now){
+    if (!start) start = now;
+    var t = now - start || 0;
+
+    for (var i = 0; i < 3; ++i)
+      $reels[i].scrollTop = (speeds[i] / tMax / 2 * (tMax - t) * (tMax - t) + r[i]) % height | 0;
+
+    if (t < tMax)
+      requestAnimationFrame(animate);
+    else {
+      start = undefined;
+      check();
+    }
+  }
+
+  function check(){
+    $msg.html(
+      r[0] === r[1] && r[1] === r[2] ?
+        'You won! Enjoy your ' + reels[1][ (r[0] / 70 + 1) % 3 | 0 ].split(' ')[0]
+      :
+        'Try again'
+    );
+  }
+
+  return {init: init}
+
+})();
+
+$(sm.init);
+</script>
+</head>
+<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="50">
+
+<nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand logo" href="../index.html">Wishing <img src="../images/wishing-baba.png"> Baba</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="../index.html#myPage">HOME</a></li>
+        <li><a href="../index.html#band">ABOUT</a></li>
+        <li><a href="../index.html#tour">THEMES</a></li>
+        <li><a href="../index.html#contact">CONTACT</a></li>
+<!--         <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">MORE
+          <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="#">Merchandise</a></li>
+            <li><a href="#">Extras</a></li>
+            <li><a href="#">Media</a></li> 
+          </ul>
+        </li> -->
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- Container (wishing Section) -->
+<div class="container-fluid wishing-section">
+  <div class="row">
+    <div class="col-sm-2"></div>
+    <div class="col-sm-8">
+      <div class="main-div">
+        <div id="sm">
+          <div class="group lever">
+            <button>Start</button>
+          </div>
+          <div class="group">
+            <div class="reel"></div>
+            <div class="reel"></div>
+            <div class="reel"></div>
+          </div>
+          <p class="msg">Press Start</p>
+        </div>
+      </div>
+
+      <div class="create-div">
+        <div class="create-new">
+          <h4 class="text-center">Create your whish here </h4>
+          <input type="text" id="userNameBottom" placeholder="Enter your name" required="true">
+          <div class="text-center">
+            <button id="nameSubmitBottom">Submit</button>
+          </div>
+        </div>
+        <div class="view-more">
+          View More Themes
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-2"></div>
+  </div>
+  <div class="add-btn">
+    <img src="../images/add.png" data-toggle="modal" data-target="#addModal">
+  </div>
+</div>
+
+<!-- Footer -->
+<footer class="page-footer">
+  <div class="whatsapp-share">
+    <a href="whatsapp://send?text=http://wishingbaba.com/valentineDay/page-3.html?name=your-name" data-action="share/whatsapp/share" ><img src="../images/whatsapp.png"> Share <span class="hidden-xs">on What's app</span></a>
+  </div>
+  <div class="fb-share-button fb-share" data-layout="button_count" data-size="small" data-mobile-iframe="true">
+    <a class="" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fwishingbaba.com%2FvalentineDay%2Fpage-3.html%3Fname%3Dyour-name&amp;src=sdkpreparse"><img src="../images/facebook.png"> Share <span class="hidden-xs">on Facebook</span></a>
+  </div>
+</footer>
+
+
+<div id="addModal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-body">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <div class="create-div">
+          <div class="create-new">
+            <h4 class="text-center">Create your whish here </h4>
+            <input type="text" id="userName" placeholder="Enter your name" required="true">
+            <div class="text-center">
+              <button id="nameSubmit">Submit</button>
+            </div>
+          </div>
+          <div class="view-more">
+            View More Themes
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+
+</body>
+</html>
+<script type="text/javascript">
+  var userName
+$(window).load(function() {
+  $('.main-div').css("min-height", $(window).height()-145)
+  userName = window.location.href.split("name=")[1];
+  var urlName = userName
+  var showName = userName.replace("-"," ")
+  $(".user-name").text(showName)
+  setTimeout(function(){
+
+    $(".whatsapp-share a").attr("href","whatsapp://send?text=http://wishingbaba.com/valentineDay/page-3.html?name="+urlName+"")
+    $(".fb-share a").attr("href","https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fwishingbaba.com%2FvalentineDay%2Fpage-3.html%3Fname%3D"+urlName+"&amp;src=sdkpreparse")
+  },600)
+});
+
+$(document).on("click","#nameSubmit",function(){
+  var newUserName = $("#userName").val().replace(" ","-")
+  window.location.href = "page-3.html?name="+newUserName+""
+})
+
+$(document).on("click","#nameSubmitBottom",function(){
+  var newUserName = $("#userNameBottom").val().replace(" ","-")
+  window.location.href = "page-3.html?name="+newUserName+""
+})
+
+
+
+</script>
+
+
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-91738076-1', 'auto');
+  ga('send', 'pageview');
+
+</script>

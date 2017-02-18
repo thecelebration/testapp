@@ -1,23 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Good Night</title>
+  <title>Wishing Baba</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta property="og:site_name" content="The Celebration">
-  <meta property="og:title" content="Good Night" />
-  <meta property="og:description" content="Your friend is wishing you Good Night, Click Here" />
-  <meta property="og:image" itemprop="image" content="https://thecelebration.github.io/images/sGn-1.png">
+  <meta property="og:site_name" content="Wishing Baba">
+  <meta property="og:title" content="valentine Day" />
+  <meta property="og:description" content="Your friend is wish you Good Night and Sweet Dreams, Click Here" />
+  <meta property="og:image" itemprop="image" content="http://wishingbaba.com/goodNight/images/bg-1-sm.png">
   <meta property="og:type" content="website" />
   <meta property="og:updated_time" content="1440432930" />
+  <link rel="shortcut icon" type="image/gif" href="../images/wishingBaba.gif"/>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+  <link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" type="text/css" href="../css/style.css">
-  <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet"> 
+  <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-  <script src="../js/script.js"></script>
-  <script src="../js/animation.js"></script>
-   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-  <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
   <div id="fb-root"></div>
   <script>(function(d, s, id) {
     var js, fjs = d.getElementsByTagName(s)[0];
@@ -26,198 +29,215 @@
     js.src = "//connect.facebook.net/en_US/all.js#xfbml=1";
     fjs.parentNode.insertBefore(js, fjs);
   }(document, 'script', 'facebook-jssdk'));</script>
+
+  <script src="https://cdn.onesignal.com/sdks/OneSignalSDK.js" async='async'></script>
   <script>
-    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-    ga('create', 'UA-89509182-1', 'auto');
-    ga('send', 'pageview');
+    var OneSignal = window.OneSignal || [];
+    OneSignal.push(["init", {
+      appId: "c42fe564-f56f-47aa-abab-a38b57081b2e",
+      autoRegister: true, /* Set to true to automatically prompt visitors */
+      subdomainName: 'wishingBaba',
+      httpPermissionRequest: {
+        enable: true
+      },
+      notifyButton: {
+          enable: true
+      }
+    }]);
   </script>
+
+  <style type="text/css">
+    .main-div{
+      background-image: url("images/bg-1.jpg");
+      background-size: 100% 100%;
+      margin-top: 15px;
+    }
+    .new-text{
+      text-align: center;
+      max-width: 300px;
+      margin: auto;%;
+    }
+    .new-text h3{
+      margin-top: 90px;
+      color: #fefefe;
+      font-size: 42px;
+      margin-bottom: 30px;
+      font-family: "Kaushan Script","Helvetica Neue",Helvetica,Arial,cursive;
+    }
+    .new-text h1{
+      color: #fefefe;
+      font-family: "Kaushan Script","Helvetica Neue",Helvetica,Arial,cursive;
+      font-size: 46px;
+    }
+    .new-text h2{
+      color: #fefefe;
+      font-size: 36px;
+      font-family: "Kaushan Script","Helvetica Neue",Helvetica,Arial,cursive;
+    }
+    .new-text h4{
+      color: #fefefe;
+      font-size: 30px;
+      font-family: "Kaushan Script","Helvetica Neue",Helvetica,Arial,cursive;
+    }
+
+    /*body { background-color:#333; }*/
+#snow{
+  background: none;
+  /*font-family: Androgyne;*/
+  background-image: url('images/s1.png'), url('images//s2.png'), url('images//s3.png');
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index:1;
+  -webkit-animation: snow 10s linear infinite;
+  -moz-animation: snow 10s linear infinite;
+  -ms-animation: snow 10s linear infinite;
+  animation: snow 10s linear infinite;
+}
+@keyframes snow {
+  0% {background-position: 0px 0px, 0px 0px, 0px 0px;}
+  50% {background-position: 500px 500px, 100px 200px, -100px 150px;}
+  100% {background-position: 500px 1000px, 200px 400px, -100px 300px;}
+}
+@-moz-keyframes snow {
+  0% {background-position: 0px 0px, 0px 0px, 0px 0px;}
+  50% {background-position: 500px 500px, 100px 200px, -100px 150px;}
+  100% {background-position: 400px 1000px, 200px 400px, 100px 300px;}
+}
+@-webkit-keyframes snow {
+  0% {background-position: 0px 0px, 0px 0px, 0px 0px;}
+  50% {background-position: 500px 500px, 100px 200px, -100px 150px;}
+  100% {background-position: 500px 1000px, 200px 400px, -100px 300px;}
+}
+@-ms-keyframes snow {
+  0% {background-position: 0px 0px, 0px 0px, 0px 0px;}
+  50% {background-position: 500px 500px, 100px 200px, -100px 150px;}
+  100% {background-position: 500px 1000px, 200px 400px, -100px 300px;}
+} 
+  </style>
+
+
 </head>
-<body>
-<style type="text/css">
-.col-1 {
-    color: #fff;
-    text-align: center;
-    font-size: 30px;
-    text-transform: capitalize;
-    padding-top: 60px;
-    font-family: 'Lobster', cursive;
-}
-.col-2 {
-    color: #fff;
-    text-align: center;
-    font-size: 22px;
-    text-transform: capitalize;
-    font-family: 'Lobster', cursive;
-}
-.col-3 {
-    color: #fff;
-    text-align: center;
-    font-size: 38px;
-    text-transform: capitalize;
-    font-family: 'Lobster', cursive;
-}
-.qut-bg p {
-    color: #fff;
-    font-size: 16px;
-    line-height: 20px;
-    text-shadow: 0 1px 3px #000;
-    padding: 5PX 15PX;
-}
-</style>
-<div class="container-mob">
-  <div class="page-top-bar">
-    <p class="create-tab">
-      Create Your Own whish Like This 
-    </p>
-    <a href="../index.html">
-      <button>View More</button>
-    </a>
+<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="50">
+
+<nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand logo" href="../index.html">Wishing <img src="../images/wishing-baba.png"> Baba</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="../index.html#myPage">HOME</a></li>
+        <li><a href="../index.html#band">ABOUT</a></li>
+        <li><a href="../index.html#tour">THEMES</a></li>
+        <li><a href="../index.html#contact">CONTACT</a></li>
+<!--         <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">MORE
+          <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="#">Merchandise</a></li>
+            <li><a href="#">Extras</a></li>
+            <li><a href="#">Media</a></li> 
+          </ul>
+        </li> -->
+      </ul>
+    </div>
   </div>
-  <div class="container">
+</nav>
+
+<!-- Container (wishing Section) -->
+<div class="container-fluid wishing-section">
   <div class="row">
-  <div class="col-sm-2">
-    <div class="page-ads hidden-xs">
-      <ins class="adsbygoogle"
-           style="display:block"
-           data-ad-client="ca-pub-1440938179169907"
-           data-ad-slot="5691055072"
-           data-ad-format="auto"></ins>
-      <script>
-      (adsbygoogle = window.adsbygoogle || []).push({});
-      </script>
-    </div>
-  </div>
-  <div class="col-sm-8">
-    <div class="page-body2" id="page-body">
-      <div class="bg"></div>
-      <p class="col-1 user-name"><span></span></p>
-      <p class="col-2">Says</p>
-      <p class="col-3">Good Night</p>
-      <p class="col-3">&</p>
-      <p class="col-3">Sweet Dreams</p>
-      <div class="qut-bg" style="margin-top: 100px">
-        <p>
-          Never let the <strong>Darkness</strong> or negativity outside affect your <strong>Inner Self</strong>. Just wait until <strong>Morning</strong> comes and the bright light will drown out the <strong>Darkness</strong>. Today has been difficult, but tommorow will be <strong>Another Day</strong>.
-        </p>
-        <span class="pull-right user-name">- <span></span></span>
-      </div>
-    </div>
-    <div class="page-ads">
-      <ins class="adsbygoogle"
-           style="display:block"
-           data-ad-client="ca-pub-1440938179169907"
-           data-ad-slot="5691055072"
-           data-ad-format="auto"></ins>
-      <script>
-      (adsbygoogle = window.adsbygoogle || []).push({});
-      </script>
-    </div>
-    <div class="page-ads">
-      <ins class="adsbygoogle"
-           style="display:block"
-           data-ad-client="ca-pub-1440938179169907"
-           data-ad-slot="5691055072"
-           data-ad-format="auto"></ins>
-      <script>
-      (adsbygoogle = window.adsbygoogle || []).push({});
-      </script>
-    </div>
-    <div class="create-div">
-      <div class="create-new">
-        <h4 class="text-center">Enter Your Nmae To Create Your Own whish Like This </h4>
-        <input type="text" id="userNameBottom" placeholder="name" required="true">
-        <div class="text-center">
-          <button id="nameSubmitBottom">Submit</button>
-        </div>
-      </div>
-      <div class="view-more">
-        View More Themes
-      </div>
-    </div>
-    <div class="page-ads">
-      <ins class="adsbygoogle"
-           style="display:block"
-           data-ad-client="ca-pub-1440938179169907"
-           data-ad-slot="5691055072"
-           data-ad-format="auto"></ins>
-      <script>
-      (adsbygoogle = window.adsbygoogle || []).push({});
-      </script>
-    </div>
-    <div class="page-ads">
-      <ins class="adsbygoogle"
-           style="display:block"
-           data-ad-client="ca-pub-1440938179169907"
-           data-ad-slot="5691055072"
-           data-ad-format="auto"></ins>
-      <script>
-      (adsbygoogle = window.adsbygoogle || []).push({});
-      </script>
-    </div>
-  </div>
-  <div class="col-sm-2">
-    <div class="page-ads hidden-xs">
-      <ins class="adsbygoogle"
-           style="display:block"
-           data-ad-client="ca-pub-1440938179169907"
-           data-ad-slot="5691055072"
-           data-ad-format="auto"></ins>
-      <script>
-      (adsbygoogle = window.adsbygoogle || []).push({});
-      </script>
-    </div>
-  </div>
-  </div>
-  </div>
-  <div class="pagefooter-mob">
-    <!-- <div class="left"> < </div> -->
-    <div class="share">
-      <a href="whatsapp://send?text=https://thecelebration.github.io/goodNight/page-1.html?name=your-name" data-action="share/whatsapp/share" ><img src="../images/whatsapp.png"> Share on What's app</a>
-    </div>
-    <div class="fb-share-button fb-share" data-layout="button_count" data-size="small" data-mobile-iframe="true"><a class="" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fthecelebration.github.io%2FgoodNight%2Fpage-1.html%3Fname%3Dyour-name&amp;src=sdkpreparse"><img src="../images/facebook.png"> Share on Facebook</a></div>
-    <!-- <div class="right"> > </div> -->
-  </div>
-</div>
-<div class="cd-popup" role="alert">
-  <div class="overflow">
-    <div class="cd-popup-container">
-      <div class="form-buy">
-        <h3>Enter your name</h3>
-        <div>
-          <div>
-            <div>
-              <input type="text" id="userName" placeholder="name" required="true">
-              <div>
-                <button id="nameSubmit">Submit</button>
-                <button class="popup-close">Close</button>
-              </div>
-            </div>
+    <div class="col-sm-2"></div>
+    <div class="col-sm-8">
+      <div class="main-div">
+        <div id="snow" >
+          <div class="new-text">
+            <h3><strong><span class="user-name"></span></strong></h3>
+            <h4>wishing You</h4>
+            <h1>Good Night</h1>
+            <h2>&</h2>
+            <h1>Sweet Dreams</h1>
           </div>
         </div>
       </div>
-      <a href="#0" class="cd-popup-close img-replace"></a>
-    </div> 
+
+      <div class="create-div">
+        <div class="create-new">
+          <h4 class="text-center">Create your whish here </h4>
+          <input type="text" id="userNameBottom" placeholder="Enter your name" required="true">
+          <div class="text-center">
+            <button id="nameSubmitBottom">Submit</button>
+          </div>
+        </div>
+        <div class="view-more">
+          View More Themes
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-2"></div>
   </div>
-</div> 
+  <div class="add-btn">
+    <img src="../images/add.png" data-toggle="modal" data-target="#addModal">
+  </div>
+</div>
+
+<!-- Footer -->
+<footer class="page-footer">
+  <div class="whatsapp-share">
+    <a href="whatsapp://send?text=http://wishingbaba.com/goodNight/page-1.html?name=your-name" data-action="share/whatsapp/share" ><img src="../images/whatsapp.png"> Share <span class="hidden-xs">on What's app</span></a>
+  </div>
+  <div class="fb-share-button fb-share" data-layout="button_count" data-size="small" data-mobile-iframe="true">
+    <a class="" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fwishingbaba.com%2FgoodNight%2Fpage-1.html%3Fname%3Dyour-name&amp;src=sdkpreparse"><img src="../images/facebook.png"> Share <span class="hidden-xs">on Facebook</span></a>
+  </div>
+</footer>
+
+
+<div id="addModal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-body">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <div class="create-div">
+          <div class="create-new">
+            <h4 class="text-center">Create your whish here </h4>
+            <input type="text" id="userName" placeholder="Enter your name" required="true">
+            <div class="text-center">
+              <button id="nameSubmit">Submit</button>
+            </div>
+          </div>
+          <div class="view-more">
+            View More Themes
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+
 </body>
 </html>
 <script type="text/javascript">
   var userName
 $(window).load(function() {
-  // $('page-body2').css("height", $(window).height()-115)
-  $('.bg').css("height", $(window).height()-115)
-  // $('.qut').css("margin-top", $(window).height()-450)
+  $('.main-div').css("min-height", $(window).height()-145)
   userName = window.location.href.split("name=")[1];
   var urlName = userName
   var showName = userName.replace("-"," ")
-  $(".user-name span").text(showName)
+  $(".user-name").text(showName)
   setTimeout(function(){
 
-    $(".share a").attr("href","whatsapp://send?text=https://thecelebration.github.io/goodNight/page-1.html?name="+urlName+"")
-    $(".fb-share a").attr("href","https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fthecelebration.github.io%2FgoodNight%2Fpage-1.html%3Fname%3D"+urlName+"&amp;src=sdkpreparse")
+    $(".whatsapp-share a").attr("href","whatsapp://send?text=http://wishingbaba.com/goodNight/page-1.html?name="+urlName+"")
+    $(".fb-share a").attr("href","https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fwishingbaba.com%2FgoodNight%2Fpage-1.html%3Fname%3D"+urlName+"&amp;src=sdkpreparse")
   },600)
 });
 
@@ -230,4 +250,20 @@ $(document).on("click","#nameSubmitBottom",function(){
   var newUserName = $("#userNameBottom").val().replace(" ","-")
   window.location.href = "page-1.html?name="+newUserName+""
 })
+
+
+
+</script>
+
+
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-91738076-1', 'auto');
+  ga('send', 'pageview');
+
 </script>
