@@ -160,6 +160,7 @@ textarea {
   position: fixed;
   right: 10px;
   bottom: 70px;
+  z-index: 999;
 }
 .wishing-section .add-btn img{
   max-width: 100%;
@@ -172,6 +173,8 @@ textarea {
   width: 100%;
   margin: 15px auto;
   text-align: center;
+  z-index: 99;
+  position: relative;
 }
 .create-div .create-new{
   padding: 30px 10px;
@@ -229,6 +232,7 @@ textarea {
   position: fixed;
   width: 100%;
   bottom: 0;
+  z-index: 999;
 }
 .page-footer .whatsapp-share{
   width: 50%;
