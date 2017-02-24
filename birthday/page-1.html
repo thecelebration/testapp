@@ -218,7 +218,7 @@ $(window).load(function() {
   $('.main-div').css("min-height", $(window).height()-145)
   userName = window.location.href.split("name=")[1];
   var urlName = userName
-  var showName = userName.replace("-"," ")
+  var showName = userName.split('-').join(' ')
   $(".user-name").text(showName)
   setTimeout(function(){
 
@@ -228,12 +228,12 @@ $(window).load(function() {
 });
 
 $(document).on("click","#nameSubmit",function(){
-  var newUserName = $("#userName").val().replace(" ","-")
+  var newUserName = $("#userName").val().split(' ').join('-')
   window.location.href = "page-1.html?name="+newUserName+""
 })
 
 $(document).on("click","#nameSubmitBottom",function(){
-  var newUserName = $("#userNameBottom").val().replace(" ","-")
+  var newUserName = $("#userNameBottom").val().split(' ').join('-')
   window.location.href = "page-1.html?name="+newUserName+""
 })
 

@@ -250,3 +250,8 @@ textarea {
 .user-name{
   text-transform: capitalize;
 }
+
+.add-div{
+  max-width: 100%;
+  overflow: hidden;
+}
