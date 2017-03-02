@@ -307,12 +307,15 @@
         }
         OneSignal.isPushNotificationsEnabled(function(isEnabled) {
             if (isEnabled) {
-              $('#addSubscribe').modal('show');
-                
+                setTimeout(function(){
+                  $('#addModal').modal('show');
+                },50000)
             } else {
                 document.getElementById("subscribe-link").addEventListener('click', subscribe);
                 document.getElementById("subscribe-link").style.display = '';
-                $('#addModal').modal('show');
+                setTimeout(function(){
+                  $('#addSubscribe').modal('show');
+                },30000)
             }
         });
     });
