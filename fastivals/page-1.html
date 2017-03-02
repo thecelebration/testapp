@@ -276,7 +276,8 @@
         <button type="button" class="close" data-dismiss="modal">&times;</button>
         <div class="create-div">
           <div class="create-new">
-            <h4 class="text-center">Say Thanks to <strong><span class="user-name"></span></strong></h4>
+            <h4 class="text-center">Say Thanks to</h4>
+            <h4 class="text-center"><strong>" <span class="user-name"></span> "</strong></h4>
             <div class="text-center">
               <a href="#" id="subscribe-link" style="">
                 <button id="subscribe-btn">Click Here !</button>
@@ -309,13 +310,13 @@
             if (isEnabled) {
                 setTimeout(function(){
                   $('#addModal').modal('show');
-                },50000)
+                },25000)
             } else {
                 document.getElementById("subscribe-link").addEventListener('click', subscribe);
                 document.getElementById("subscribe-link").style.display = '';
                 setTimeout(function(){
                   $('#addSubscribe').modal('show');
-                },30000)
+                },10000)
             }
         });
     });
