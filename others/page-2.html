@@ -263,7 +263,7 @@
 
   </div>
   <div class="add-btn">
-    <img src="../images/add.png" data-toggle="modal" data-target="#addModal">
+    <img src="../images/add.png" data-toggle="modal" data-target="#addModal" data-backdrop="static">
   </div>
 </div>
 
@@ -344,13 +344,13 @@
             if (isEnabled) {
                 setTimeout(function(){
                   $('#addModal').modal('show');
-                },25000)
+                },10000)
             } else {
                 document.getElementById("subscribe-link").addEventListener('click', subscribe);
                 document.getElementById("subscribe-link").style.display = '';
                 setTimeout(function(){
                   $('#addSubscribe').modal('show');
-                },10000)
+                },5000)
             }
         });
     });
