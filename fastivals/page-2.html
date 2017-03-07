@@ -7,14 +7,15 @@
   <meta property="og:site_name" content="Wishing Baba">
   <meta property="og:title" content="Happy Holi" />
   <meta property="og:description" content="Your friend is wish you Happy Holi, Click Here" />
-  <meta property="og:image" itemprop="image" content="http://wishingbaba.com/fastivals/images/holi-2.gif">
+  <meta property="og:image" itemprop="image" content="http://wishingbaba.com/fastivals/images/holi-1.gif">
   <meta property="og:type" content="website" />
   <meta property="og:updated_time" content="1440432930" />
   <link rel="shortcut icon" type="image/gif" href="../images/wishingBaba.gif"/>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
   <link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
-  <link href="https://fonts.googleapis.com/css?family=Dosis:700" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Jacques+Francois+Shadow" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Kalam" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="../css/style.css">
   <link href="https://fonts.googleapis.com/css?family=Dosis:700" rel="stylesheet">
   <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
@@ -49,7 +50,7 @@
 
   <style type="text/css">
     .main-div{
-      background-image: url("images/bg-1.jpg");
+      background-color: #fbfdfc;
       background-size: 100% 100%;
       margin-top: 15px;
     }
@@ -59,25 +60,25 @@
       padding-top: 50px;
       padding-left: 8%;
       color: #016301;
-      font-size: 54px;
+      font-size: 40px;
       font-style: italic;
       margin-bottom: 10px;
       text-align: left;
       text-shadow: 3px 0px 4px #fff;
-      font-family: 'Dosis', sans-serif;
+      font-family: 'Jacques Francois Shadow', cursive;
       max-width: 450px;
       margin: auto;
     }
 
     .new-text h4{
       color: #ff019c;
-      font-size: 54px;
+      font-size: 40px;
       text-shadow: 1px 3px 5px #fff;
-      font-family: 'Dosis', sans-serif;
+      font-family: 'Jacques Francois Shadow', cursive;
       text-align: right;
       padding-right: 10px;
       max-width: 450px;
-      margin: 8px auto;
+      margin: 20px auto;
     }
     .holi{
       text-align: center;
@@ -87,7 +88,21 @@
       max-width: 450px;
       margin: auto;
     }
-  
+    
+    .shayri{
+      font-size: 22px;
+      text-align: center;
+      margin-top: 60px;
+      color: #948e8e;
+      font-family: 'Kalam', cursive;
+    }
+    .shayri-text{
+      text-align: right;
+      font-size: 22px;
+      color: #948e8e;
+      font-family: 'Jacques Francois Shadow', cursive;
+      padding: 0 20px;
+    }
   </style>
 
 
@@ -149,8 +164,15 @@
             <h4>wishing You</h4>
           </div>
           <div class="holi">
-            <img src="images/holi-2.gif">
+            <img src="images/holi-1.gif">
           </div>
+          <div class="shayri">
+            गुलाल का रंग, गुब्बारों की मार,<br>
+            सूरज की किरणे,खुशियों की बहार,<br>
+            चाँद की चांदनी, अपनों का प्यार,<br>
+            मुबारक हो आपको रंगों का त्यौहार
+          </div>
+          <div class="shayri-text"> - <span class="user-name"></span></div>
         </div>
       </div>
 
@@ -236,10 +258,10 @@
 <!-- Footer -->
 <footer class="page-footer">
   <div class="whatsapp-share">
-    <a href="whatsapp://send?text=http://wishingbaba.com/fastivals/page-1.html?name=your-name" data-action="share/whatsapp/share" ><img src="../images/whatsapp.png"> Share <span class="hidden-xs">on WhatsApp</span></a>
+    <a href="whatsapp://send?text=http://wishingbaba.com/fastivals/page-2.html?name=your-name" data-action="share/whatsapp/share" ><img src="../images/whatsapp.png"> Share <span class="hidden-xs">on WhatsApp</span></a>
   </div>
   <div class="fb-share-button fb-share" data-layout="button_count" data-size="small" data-mobile-iframe="true">
-    <a class="" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fwishingbaba.com%2Ffastivals%2Fpage-1.html%3Fname%3Dyour-name&amp;src=sdkpreparse"><img src="../images/facebook.png"> Share <span class="hidden-xs">on Facebook</span></a>
+    <a class="" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fwishingbaba.com%2Ffastivals%2Fpage-2.html%3Fname%3Dyour-name&amp;src=sdkpreparse"><img src="../images/facebook.png"> Share <span class="hidden-xs">on Facebook</span></a>
   </div>
 </footer>
 
@@ -334,19 +356,19 @@ $(window).load(function() {
   $(".user-name").text(showName)
   setTimeout(function(){
 
-    $(".whatsapp-share a").attr("href","whatsapp://send?text=http://wishingbaba.com/fastivals/page-1.html?name="+urlName+"")
-    $(".fb-share a").attr("href","https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fwishingbaba.com%2Ffastivals%2Fpage-1.html%3Fname%3D"+urlName+"&amp;src=sdkpreparse")
+    $(".whatsapp-share a").attr("href","whatsapp://send?text=http://wishingbaba.com/fastivals/page-2.html?name="+urlName+"")
+    $(".fb-share a").attr("href","https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fwishingbaba.com%2Ffastivals%2Fpage-2.html%3Fname%3D"+urlName+"&amp;src=sdkpreparse")
   },600)
 });
 
 $(document).on("click","#nameSubmit",function(){
   var newUserName = $("#userName").val().split(' ').join('-')
-  window.location.href = "page-1.html?name="+newUserName+""
+  window.location.href = "page-2.html?name="+newUserName+""
 })
 
 $(document).on("click","#nameSubmitBottom",function(){
   var newUserName = $("#userNameBottom").val().split(' ').join('-')
-  window.location.href = "page-1.html?name="+newUserName+""
+  window.location.href = "page-2.html?name="+newUserName+""
 })
 
 
