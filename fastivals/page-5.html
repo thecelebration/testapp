@@ -7,7 +7,7 @@
   <meta property="og:site_name" content="Wishing Baba">
   <meta property="og:title" content="Happy Raksha Bandhan" />
   <meta property="og:description" content="No matter how far or near, old or young. Remember the wonderful times with your brother or sister and celebrate the previous bond of love... With all your heart..." />
-  <meta property="og:image" itemprop="image" content="http://wishingbaba.com/fastivals/images/happyRakhi-1-sm.jpg">
+  <meta property="og:image" itemprop="image" content="http://wishingbaba.com/fastivals/images/happyRakhi-2-sm.jpg">
   <meta property="og:type" content="website" />
   <meta property="og:updated_time" content="1440432930" />
   <link rel="shortcut icon" type="image/gif" href="../images/wishingBaba.gif"/>
@@ -48,8 +48,10 @@
 
   <style type="text/css">
     .main-div{
-      background-image: url("images/happyRakhi.jpg");
+      background-image: url("images/happyRakhi1.jpg");
       background-size: 100% 100%;
+      max-width: 600px;
+      margin: auto;
       margin-top: 15px;
     }
     .new-text{
@@ -59,24 +61,25 @@
     .new-text h3{
       color: #fefefe;
       font-size: 42px;
-      margin-bottom: 30px;
+      margin: 0;
       font-family: "Kaushan Script","Helvetica Neue",Helvetica,Arial,cursive;
       text-shadow: 0 0 6px black;
     }
     .new-text h1{
-      color: #fefefe;
+      color: #fef639;
       font-family: "Kaushan Script","Helvetica Neue",Helvetica,Arial,cursive;
       font-size: 46px;
-      text-shadow: 0 0 6px black;
+      text-shadow: 0 0 8px black;
+      padding-top: 16px;
     }
     .new-text p{
-      color: #fefefe;
+      color: #fef63c;
       font-size: 22px;
       padding: 15px;
       max-width: 700px;
       margin: auto;
-      margin-top: 90px;
-      text-shadow: 0 0 6px black;
+      /*padding: 66px 0 135px 0px;*/
+      text-shadow: 0 0 6px #00163e;
       font-family: "Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif";
     }
     .new-text h4{
@@ -96,7 +99,7 @@
       .new-text p{
         font-size: 18px;
         margin-top: 8px;
-        padding: 25px;
+        padding: 5px;
       }
       .new-text h4{
         font-size: 20px;
@@ -160,10 +163,15 @@
       <div class="main-div">
         <div id="snow" >
           <div class="new-text">
-            <p>No matter how far or near, old or young. Remember the wonderful times with your brother or sister and celebrate the previous bond of love... With all your heart...</p>
             <h1>Happy Raksha Bandhan</h1>
             <h4>wishing From</h4>
             <h3><strong><span class="user-name"></span></strong></h3>
+            <p>
+              Tera Jeevan Rahe Roshan,<br>
+              Tujhe Kabhi Na Chhu Payein Gam,<br>
+              Khushi Mile Tujhe Bahut Saari,<br>
+              Ishwar Ka Ashirwad rahe HarDum.
+            </p>
           </div>
         </div>
       </div>
@@ -251,10 +259,10 @@
 <!-- Footer -->
 <footer class="page-footer">
   <div class="whatsapp-share">
-    <a href="whatsapp://send?text=http://wishingbaba.com/fastivals/page-4.html?name=your-name" data-action="share/whatsapp/share" ><img src="../images/whatsapp.png"> Share <span class="hidden-xs">on WhatsApp</span></a>
+    <a href="whatsapp://send?text=http://wishingbaba.com/fastivals/page-5.html?name=your-name" data-action="share/whatsapp/share" ><img src="../images/whatsapp.png"> Share <span class="hidden-xs">on WhatsApp</span></a>
   </div>
   <div class="fb-share-button fb-share" data-layout="button_count" data-size="small" data-mobile-iframe="true">
-    <a class="" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fwishingbaba.com%2Ffastivals%2Fpage-4.html%3Fname%3Dyour-name&amp;src=sdkpreparse"><img src="../images/facebook.png"> Share <span class="hidden-xs">on Facebook</span></a>
+    <a class="" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fwishingbaba.com%2Ffastivals%2Fpage-5.html%3Fname%3Dyour-name&amp;src=sdkpreparse"><img src="../images/facebook.png"> Share <span class="hidden-xs">on Facebook</span></a>
   </div>
 </footer>
 
@@ -349,19 +357,19 @@ $(window).load(function() {
   $(".user-name").text(showName)
   setTimeout(function(){
 
-    $(".whatsapp-share a").attr("href","whatsapp://send?text=http://wishingbaba.com/fastivals/page-4.html?name="+urlName+"")
-    $(".fb-share a").attr("href","https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fwishingbaba.com%2Ffastivals%2Fpage-4.html%3Fname%3D"+urlName+"&amp;src=sdkpreparse")
+    $(".whatsapp-share a").attr("href","whatsapp://send?text=http://wishingbaba.com/fastivals/page-5.html?name="+urlName+"")
+    $(".fb-share a").attr("href","https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fwishingbaba.com%2Ffastivals%2Fpage-5.html%3Fname%3D"+urlName+"&amp;src=sdkpreparse")
   },600)
 });
 
 $(document).on("click","#nameSubmit",function(){
   var newUserName = $("#userName").val().split(' ').join('-')
-  window.location.href = "page-4.html?name="+newUserName+""
+  window.location.href = "page-5.html?name="+newUserName+""
 })
 
 $(document).on("click","#nameSubmitBottom",function(){
   var newUserName = $("#userNameBottom").val().split(' ').join('-')
-  window.location.href = "page-4.html?name="+newUserName+""
+  window.location.href = "page-5.html?name="+newUserName+""
 })
 
 
